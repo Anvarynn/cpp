@@ -18,3 +18,18 @@ Solomon
 For this project, I was responsible for building the inventory system using a singly linked list. I created an ItemNode structure and wrote the functions to add items, remove items, print the inventory, and delete the whole list. Making the list work taught me how pointers move through nodes and how important it is to update them correctly when inserting or removing something. I learned that linked lists grow and shrink easily during the game, which makes them a good choice for an inventory because the number of items can change at any time. My code connects with Dallas’s game loop because his commands call my functions whenever the player takes or drops an item. It also works with Kamal’s tree, since each location can only hold one item, and the rest go into my linked list. Overall, this project helped me understand pointers better and how different modules work together.
 
 Dallas
+Role: Save/Load and Exploration
+
+Responsibilities and Accomplishments:
+* Implemented the main exploration loop for the game, handling navigation commands (left, right, back), item interactions (take, drop), inventory viewing, and traversal displays (preorder, inorder, postorder).
+* Developed saveGame() and loadGame() functions in plain text format, capturing current location, inventory items, and world item states.
+* Managed path stack for backtracking, ensuring player can move back through previously visited nodes without altering the tree structure.
+* Integrated and coordinated with team members’ modules: called Kamal’s traversal functions and Solomon’s inventory functions for seamless operation.
+* Ensured proper memory management by freeing dynamic memory for both the tree and the inventory on game exit.
+* Addressed edge cases, such as attempting to take or drop items where none exist, or navigating where no child nodes are present.
+* Gained experience with command parsing, text file I/O, modular program design, and debugging dynamic memory issues.
+
+Lessons Learned:
+* Implementing a text-based game loop reinforced understanding of modular design and teamwork.
+* Learned how to safely manipulate dynamic structures (linked lists and trees) and persist game state using file I/O.
+* Improved problem-solving skills for integrating multiple data structures and handling real-world edge cases.
